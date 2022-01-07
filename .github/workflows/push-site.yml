@@ -22,5 +22,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master
+          BRANCH: gh-pages
           FOLDER: .
