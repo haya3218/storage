@@ -19,8 +19,7 @@ jobs:
           curl https://raw.githubusercontent.com/jayanta525/apindex-v2/master/sudo-install.sh | bash
           apindex .
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.3
+        uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: .
+          branch: gh-pages # The branch the action should deploy to.
+          folder: . # The folder the action should deploy.
